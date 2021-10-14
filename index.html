@@ -1,0 +1,126 @@
+<!-- BLOG page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" media="(max-width:600px)" href="style.css">
+  <!-- <link rel="stylesheet" href="sm_mq.css"> -->
+  <!-- <link rel="stylesheet" href="med_mq.css"> -->
+  <!-- <link rel="stylesheet" href="lg_mq.css"> -->
+  <!-- <link rel="stylesheet" href="xl_mq.css"> -->
+
+  <title>DF-Blog</title>
+</head>
+
+<body>
+
+  <!--
+    SITE WRAPPER
+  -->
+  <div class="site-wrapper">
+
+    <!--
+    NAV (repeats on each page)
+    -->
+    <nav class="nav_my-story">
+      <input type="checkbox" name="nav_checkbox" id="nav_checkbox" onclick="dimMain()">
+      <label for="nav_checkbox" class="nav_toggle">
+        <i class="fa fa-bars"></i>
+        <i class="fa fa-times"></i>
+      </label>
+      <ul class="nav_menu">
+        <img class="nav_logo-weight" src="assets/DesiFit_weight_purple.png" alt="">
+        <div class="nav_logo-text">
+          <div class="header-logo-text"><a class="main-color" href="#">Desi<strong>Fit</strong></a></div>
+        </div>
+        <div class="nav_menu-list">
+          <li class="li-0"><a href="https://willr-webdev.github.io/DesiFit-1/">Home</a></li>
+          <li class="li-1"><a href="#">My Story</a></li>
+          <li class="li-2"><a href="https://willr-webdev.github.io/DesiFit-3/">Blog</a></li>
+          <li class="li-3"><a href="https://willr-webdev.github.io/DesiFit-4/">Coaching</a></li>
+          <li class="li-4"><a href="https://willr-webdev.github.io/DesiFit-5/">Archive</a></li>
+          <li class="li-5"><a href="https://willr-webdev.github.io/DesiFit-6/">Free</a></li>
+        </div>
+      </ul>
+    </nav>
+
+
+
+
+    <!--
+      MAIN
+    -->
+    <main class="main-wrapper">
+
+      <div class="hero-video">
+        <video class="video" controls>
+          <source src="assets/seashells.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="hero-story">
+          <p class="hero-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, iusto magni, atque
+            ullam sint similique
+            voluptatibus vel eos, facere eaque voluptates! Delectus voluptates, dignissimos ad nulla perspiciatis enim
+            reiciendis architecto.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, iusto magni, atque
+            ullam sint similique
+            voluptatibus vel eos, facere eaque voluptates! Delectus voluptates, dignissimos ad nulla perspiciatis enim
+            reiciendis architecto.
+          </p>
+        </div>
+      </div>
+      <div class="beliefs">
+        <h2>My Beliefs</h2>
+        <ul>
+          <li>belief1</li>
+          <li>belief2</li>
+          <li>belief3</li>
+          <li>belief4</li>
+          <li>belief5</li>
+          <li>belief6</li>
+          <li>belief7</li>
+          <li>belief8</li>
+        </ul>
+      </div>
+
+
+    </main>
+
+
+
+
+    <!--
+      FOOTER (repeats on each page)
+    -->
+    <footer>
+      <blockquote class="quote-footer" cite="">
+        "Esse Lorem consequat adipisicing incididunt enim enim anim ut consequat consequat pariatur."
+      </blockquote>
+
+      <div class="cta-footer">
+        <div class="text-footer">
+          <span class="cta-span">STAY CONNECTED</span>
+        </div>
+        <div class="a-footer">
+          <a class="subscribe-footer" href="">
+            Subscribe
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+<script src="main.js"></script>
+
+</html>
