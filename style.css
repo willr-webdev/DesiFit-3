@@ -333,6 +333,25 @@ MAIN
   }
 
   /* Blog page */
+div.post-of-week {
+  background-image: url(assets/blog_scrabble.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height:15em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+div.post-of-week h3 {
+  background-color: rgba(255, 255, 255, .75);
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 15px;
+}
 
 
 /*
