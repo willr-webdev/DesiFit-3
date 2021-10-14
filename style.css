@@ -1,0 +1,400 @@
+/* Mobile First */
+
+:root {
+  /* color variables */
+  --df-main:#9a89bf;
+  --df-lightpurple: #cdb5ff;
+  --df-text: darkslategray;
+  --df-text-light: lightslategray;
+}
+
+/*
+RESET
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-y: hidden !important;
+  /* margin: 0; */
+  /* padding: .1em .75em; */
+  background-color: rgb(236, 230, 236);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* font-size: 1rem; */
+}
+a, ul, ol, blockquote, h1, h2, h3, h4, header, footer, section {
+  margin-block: 0;
+  margin-inline: 0;
+  padding-block: 0;
+  padding-inline: 0;
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+li::marker {
+  content: "😍";
+}
+
+/*
+PAGE FLEX WRAPPER
+*/
+.site-wrapper {
+  /* display: flex;
+  flex-direction: column; */
+  min-height: fit-content;
+  /* width: 100vw; */
+  /* align-items: center; */
+}
+
+/*
+NAV
+*/
+.nav {
+  border-bottom: 1px solid lightgray;
+}
+
+.nav_my-story {
+  flex: 1;
+  width: 100%;
+}
+
+.nav_toggle {
+  position: absolute;
+  cursor: pointer;
+  margin: 1rem 1rem auto 1rem;
+  right: 0;
+}
+
+.nav_logo-weight {
+  width: 4rem;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.nav_logo-text {
+  font-size: 2.3rem;
+  color: var(--df-main);
+  position: absolute;
+  height: auto;
+  top: 3px;
+  left: calc(50% - 64px);
+}
+
+.main-color {
+  color: var(--df-main);
+}
+
+i.fa-bars {
+  margin-top: 0.3rem;
+  font-size: 1.3rem;
+  color: var(--df-main);
+}
+
+i.fa-times {
+  display: none;
+  margin-top: 0.3rem;
+  font-size: 1.3rem;
+  color: var(--df-main);
+}
+
+.nav_menu {
+  flex-direction: column;
+  align-items: center;
+  /* background-color: rgba(255,255,255,.75); */
+  background-color: black;
+}
+
+.nav_menu-list {
+  width: 100%;
+  text-align: center;
+  background-color: var(--df-main);
+  /* text-align: center; */
+}
+
+.nav_menu li {
+  width: 50%;
+  display: none;
+}
+
+.li-0, .li-1, .li-2, .li-3, .li-4 {
+  border-bottom: 1px solid rgba(255,255,255,.25);
+}
+
+.li-0, .li-1, .li-2, .li-3, .li-4, .li-5 {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav_menu li a {
+  color: whitesmoke;
+  font-size: 1.5rem;
+}
+
+#nav_checkbox {
+  display: none;
+}
+#nav_checkbox:checked ~ .nav_menu li {
+  display: block;
+}
+#nav_checkbox:checked ~ .nav_toggle .fa-bars {
+  display: none;
+}
+#nav_checkbox:checked ~ .nav_toggle .fa-times {
+  display: block;
+}
+#nav_checkbox:checked ~ ul.nav_menu {
+  display: flex;
+}
+#nav_checkbox:checked main.main-wrapper {
+  opacity: 0.25;
+}
+
+/*
+MAIN
+*/
+
+/* Home page */
+.main-wrapper { /* flex wrapper */
+  flex: 1 1 80%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  opacity: 1;
+  /* margin-top: 1rem; */
+}
+
+  .featured-container { /* flex container */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+    .featured-1 {
+      flex: 1 1 100%;
+      padding: 25px 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(125, 125, 125, .1);
+    }
+
+    .featured-1 h3 {
+      font-size: 1.75em;
+      padding-bottom: 15px;
+    }
+
+    .featured-1 h4 {
+      padding-bottom: 15px;
+      font-size: 1.5em;
+      /* font-style: italic; */
+      color:rebeccapurple;
+    }
+
+    .blog {
+      background-color: rgba(255, 255, 255, .5);
+      background-image: url(assets/DesiFitLogo2019-01.png);
+      background-size:15%;
+      background-blend-mode:overlay;
+      flex: 1 1 auto;
+      font-size: 2.5em;
+      font-style: italic;
+      text-align: center;
+      min-height: 5em;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .date-line {
+      font-size: .5em;
+      font-style: normal;
+      padding-top: 5px;
+    }
+
+    .featured-2 {
+      flex: 1 1 100%;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+    }
+
+      section > a {
+        color:rebeccapurple;
+        background-color:rgb(165, 165, 165);
+        border-radius: 5px;
+        border: 5px solid rgb(165, 165, 165);
+        cursor: pointer;
+      }
+
+      section > a:hover {
+        color:var(--df-main);
+        background-color:ivory;
+        border-radius: 5px;
+        border: 5px solid ivory;
+        cursor: pointer;
+        transform: scale(1.25);
+      }
+
+      h3.clients {
+        font-size: 2em;
+        font-weight: bold;
+        padding-top: 25px;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+    
+      .featured-2 img {
+        width: 75%;
+        border-left: 10px solid whitesmoke;
+        border-right: 10px solid whitesmoke;
+      }
+    
+      .img-1 {
+        border-top: 10px solid whitesmoke;
+        border-bottom: 5px solid whitesmoke;
+      }
+    
+      .img-2 {
+        border-top: 5px solid whitesmoke;
+        border-bottom: 5px solid whitesmoke;
+      }
+    
+      .img-3 {
+        border-top: 5px solid whitesmoke;
+        border-bottom: 10px solid whitesmoke;
+      }
+
+      .events {
+        display: flex;
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        background-color: #fff;
+      }
+
+      a.event {
+        display: flex;
+        width: 100%;
+        justify-self: center;
+      }
+
+      .events img {
+        flex: 1 1 100%;
+        border:0;
+      }
+
+  /* My Story page */
+  .hero-video {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  div.hero-video video {
+    flex: 1 1 100vw;
+  }
+  div.hero-story {
+    flex: 1;
+    font-size: 1rem;
+    padding: 1.5rem;
+    background-color: rgba(255,255,255,0.25);
+  }
+  p.hero-text {
+    padding-bottom: 1rem;
+  }
+  div.beliefs {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+  }
+
+  div.beliefs li {
+    padding: 1rem;
+  }
+
+  /* Blog page */
+
+
+/*
+FOOTER
+*/
+footer {
+  flex: 1 1 10%;
+  color:var(--df-text);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 5px 5px 5px;
+  background-color:var(--df-lightpurple);
+}
+  blockquote.quote-footer {
+    background-color:rgba(255,255,255,.5);
+    border-radius: 5px;
+    font-size: .9em;
+    font-style: italic;
+    flex: 1 1 100%;
+    padding: 3px 10px;
+  }
+
+  .cta-footer {
+    flex: 1 1 25%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: .9em;
+  }
+    .text-footer {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+      .cta-span {
+        font-size: 1.1em;
+        font-weight: bold;
+      }
+
+    .a-footer {
+      flex: 1; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+      .subscribe-footer {
+      font-weight: bold;
+      }
+
+    .a-footer a {
+      color:var(--df-text-light);
+      background-color:yellow;
+      border-radius: 5px;
+      border: 5px solid yellow;
+      cursor: pointer;
+    }
+
+    .a-footer a:hover {
+      color:var(--df-main);
+      background-color:ivory;
+      border-radius: 5px;
+      border: 5px solid ivory;
+      cursor: pointer;
+      transform: scale(1.25);
+    }
