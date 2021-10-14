@@ -369,7 +369,9 @@ div.post-of-week h3 {
 }
 
 div.post-description {
-  padding: 1rem;
+  padding: 1rem 1rem 3rem 1rem;
+  background-color:var(--df-main);
+  color: whitesmoke;
 }
 
 .category {
@@ -377,10 +379,11 @@ div.post-description {
   padding: 1rem;
   flex:1;
   text-align: center;
+  color: rgba(0, 0, 0, .85);
 }
 
-.cat-1 {
-  font-weight: bold;
+.cat-0 {
+  font-size: 1.5rem;
 }
 
 .cat-1, .cat-3, .cat-5 {
@@ -388,7 +391,7 @@ div.post-description {
 }
 
 .cat-2, .cat-4, .cat-6 {
-
+  background-color: rgba(255, 255, 255, .65);
 }
 
 /*
