@@ -368,6 +368,28 @@ div.post-of-week h3 {
   border-radius: 15px;
 }
 
+div.post-description {
+  padding: 1rem;
+}
+
+.category {
+  width: 100%;
+  padding: 1rem;
+  flex:1;
+  text-align: center;
+}
+
+.cat-1 {
+  font-weight: bold;
+}
+
+.cat-1, .cat-3, .cat-5 {
+  background-color:rgba(255, 255, 255, .5);
+}
+
+.cat-2, .cat-4, .cat-6 {
+
+}
 
 /*
 FOOTER
