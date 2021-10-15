@@ -9,7 +9,7 @@
 // }
 
 function dimMain() {
-  var checkbox = document.getElementById('nav_checkbox');
+  var checkbox = document.getElementById('recipes_checkbox');
 
   if (checkbox.checked) {
     document.querySelector(".main-wrapper").style.opacity = "0";

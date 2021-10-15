@@ -395,6 +395,61 @@ div.post-description {
   background-color: rgba(255, 255, 255, .65);
 }
 
+.cat-1:hover, .cat-2:hover, .cat-3:hover, .cat-4:hover, .cat-5:hover, .cat-6:hover {
+  font-weight: bold;
+}
+
+.cat-1:active, .cat-2:active, .cat-3:active, .cat-4:active, .cat-5:active, .cat-6:active {
+  font-weight: bold;
+}
+.recipes-group {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.recipes_toggle {
+  cursor: pointer;
+}
+.recipes_toggle:hover {
+  font-weight: bold;
+}
+#recipes_checkbox {
+  display: none;
+}
+#recipes_checkbox:checked ~ .recipes-group {
+  display: flex;
+}
+#recipes_checkbox:checked main.main-wrapper {
+  opacity: 0.25;
+}
+
+.recipes {
+  background-image: url(assets/blog_scrabble.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem;
+  filter:drop-shadow(50px);
+  flex:1;
+}
+
+.recipes h2 {
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 1rem;
+  padding: .25rem;
+  color:whitesmoke;
+}
+
+.recipes p {
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 1rem;
+  padding: 1rem;
+  color:whitesmoke;
+}
+
+
+
+
 /*
 FOOTER
 */
