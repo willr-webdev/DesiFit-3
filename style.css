@@ -383,10 +383,6 @@ div.post-description {
   color: rgba(0, 0, 0, .85);
 }
 
-.cat-1 {
-  /* margin-top: 2rem; */
-}
-
 .cat-1, .cat-3, .cat-5 {
   background-color:rgba(255, 255, 255, .5);
 }
