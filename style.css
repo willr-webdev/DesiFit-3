@@ -383,8 +383,8 @@ div.post-description {
   color: rgba(0, 0, 0, .85);
 }
 
-.cat-0 {
-  font-size: 1.5rem;
+.cat-1 {
+  /* margin-top: 2rem; */
 }
 
 .cat-1, .cat-3, .cat-5 {
@@ -399,11 +399,9 @@ div.post-description {
   font-weight: bold;
 }
 
-.cat-1:active, .cat-2:active, .cat-3:active, .cat-4:active, .cat-5:active, .cat-6:active {
-  font-weight: bold;
-}
 .recipes-group {
   display: none;
+  margin-top: 1rem;
   flex-direction: column;
   width: 100%;
   align-items: center;
