@@ -383,34 +383,50 @@ div.post-description {
   color: rgba(0, 0, 0, .85);
 }
 
+.cat-0 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
 .cat-1, .cat-3, .cat-5 {
-  background-color:rgba(255, 255, 255, .5);
+  background-color:rgba(255, 255, 255, .7);
 }
 
 .cat-2, .cat-4, .cat-6 {
-  background-color: rgba(255, 255, 255, .65);
+  background-color: rgba(255, 255, 255, .25);
 }
 
 .cat-1:hover, .cat-2:hover, .cat-3:hover, .cat-4:hover, .cat-5:hover, .cat-6:hover {
   font-weight: bold;
 }
 
-.recipes-group {
+.all-group, .recipes-group, .fitness-group, .nutrition-group, .motivation-group, .other-group {
   display: none;
   margin-top: 1rem;
   flex-direction: column;
   width: 100%;
   align-items: center;
 }
-.recipes_toggle {
+
+.all_toggle, .recipes_toggle, .fitness_toggle, .nutrition_toggle, .motivation_toggle, .other_toggle {
   cursor: pointer;
 }
-.recipes_toggle:hover {
+
+.all_toggle:hover, .recipes_toggle:hover, .fitness_toggle:hover, .nutrition_toggle:hover, .other_toggle:hover {
   font-weight: bold;
 }
-#recipes_checkbox {
+
+#all_checkbox, #recipes_checkbox, #fitness_checkbox, #nutrition_checkbox, #motivation_checkbox, #other_checkbox {
   display: none;
 }
+
+#all_checkbox:checked ~ .all-group {
+  display: flex;
+}
+#all_checkbox:checked main.main-wrapper {
+  opacity: 0.25;
+}
+
 #recipes_checkbox:checked ~ .recipes-group {
   display: flex;
 }
@@ -418,7 +434,36 @@ div.post-description {
   opacity: 0.25;
 }
 
-.recipes {
+#fitness_checkbox:checked ~ .fitness-group {
+  display: flex;
+}
+#fitness_checkbox:checked main.main-wrapper {
+  opacity: 0.25;
+}
+
+#nutrition_checkbox:checked ~ .nutrition-group {
+  display: flex;
+}
+#nutrition_checkbox:checked main.main-wrapper {
+  opacity: 0.25;
+}
+
+#motivation_checkbox:checked ~ .motivation-group {
+  display: flex;
+}
+#motivation_checkbox:checked main.main-wrapper {
+  opacity: 0.25;
+}
+
+#other_checkbox:checked ~ .other-group {
+  display: flex;
+}
+#other_checkbox:checked main.main-wrapper {
+  opacity: 0.25;
+}
+
+
+.all, .recipes, .fitness, .nutrition, .motivation, .other {
   background-image: url(assets/blog_scrabble.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -427,13 +472,25 @@ div.post-description {
   flex:1;
 }
 
+.all h2 {
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 1rem;
+  padding: .25rem;
+  color:whitesmoke;
+}
+.all p {
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 1rem;
+  padding: 1rem;
+  color:whitesmoke;
+}
+
 .recipes h2 {
   background-color: rgba(0, 0, 0, .5);
   border-radius: 1rem;
   padding: .25rem;
   color:whitesmoke;
 }
-
 .recipes p {
   background-color: rgba(0, 0, 0, .5);
   border-radius: 1rem;
@@ -441,7 +498,57 @@ div.post-description {
   color:whitesmoke;
 }
 
+.fitness h2 {
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 1rem;
+  padding: .25rem;
+  color:whitesmoke;
+}
+.fitness p {
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 1rem;
+  padding: 1rem;
+  color:whitesmoke;
+}
 
+.nutrition h2 {
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 1rem;
+  padding: .25rem;
+  color:whitesmoke;
+}
+.nutrition p {
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 1rem;
+  padding: 1rem;
+  color:whitesmoke;
+}
+
+.motivation h2 {
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 1rem;
+  padding: .25rem;
+  color:whitesmoke;
+}
+.motivation p {
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 1rem;
+  padding: 1rem;
+  color:whitesmoke;
+}
+
+.other h2 {
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 1rem;
+  padding: .25rem;
+  color:whitesmoke;
+}
+.other p {
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 1rem;
+  padding: 1rem;
+  color:whitesmoke;
+}
 
 
 /*
